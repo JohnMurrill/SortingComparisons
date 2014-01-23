@@ -3,12 +3,6 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-CPP_SRCS += \
-../qsort.cpp 
-
-C_SRCS += \
-../cuda_bitonic.c 
-
 CU_SRCS += \
 ../cuda_bitonic.cu 
 
@@ -17,13 +11,9 @@ CU_DEPS += \
 
 OBJS += \
 ./cuda_bitonic.o \
-./qsort.o 
 
 C_DEPS += \
 ./cuda_bitonic.d 
-
-CPP_DEPS += \
-./qsort.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
